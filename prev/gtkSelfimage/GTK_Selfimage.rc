@@ -1,0 +1,130 @@
+#
+# Define the pixmap path, not sure if I'm going to use this though
+#
+#pixmap_path "/usr/include/X11R6/pixmaps:/home/imain/pixmaps"
+
+#==============================================================================================================
+#==============================================================================================================
+#
+# Start style defines
+#
+#==============================================================================================================
+#==============================================================================================================
+
+#
+# Text style for the login screen text
+#
+style "text_normal_white"
+{
+	#  bg_pixmap[NORMAL] = "marble.xpm"
+	fg[NORMAL] = { 1.0, 1.0, 1.0 }
+	font_name = "Sans Not-Rotated 10"
+}
+
+#
+# Font style for the fonts used in this app
+#
+style "GenFontStyle"
+{
+	font_name = "Sans Not-Rotated 10"
+}
+
+#
+# Text style for the login screen text
+#
+style "status_text"
+{
+#	fg[PRELIGHT]   = "#FF0000"
+#	fg[NORMAL]     = "#FF0000"
+	font_name = "Sans Not-Rotated 14"
+}
+
+
+#
+# Text style for the big size partition text
+#
+style "text_part_size"
+{
+	fg[NORMAL] = { 1, 1, 1 }
+	font_name = "Verdana bold 14"
+}
+
+#
+# Text style for the login screen text
+#
+style "window_normal"
+{
+	bg[NORMAL]	= "#ECE9D8"
+	bg[PRELIGHT]	= "#ECE9D8"
+	bg[ACTIVE]	= "#ECE9D8"
+	bg[INSENSITIVE]	= "#ECE9D8"
+}
+
+#
+# Text style for the login screen text
+#
+style "label_normal"
+{
+	bg[NORMAL]	= "#ECE9D8"
+	bg[PRELIGHT]	= "#ECE9D8"
+	bg[ACTIVE]	= "#ECE9D8"
+	bg[INSENSITIVE]	= "#ECE9D8"
+}
+
+#
+# Button style for the login button at least
+#
+style "button_black"
+{
+	fg[PRELIGHT]	= { 0, 0, 0 }
+	fg[ACTIVE]	= { 0, 0, 0 }
+	fg[NORMAL]	= { 0, 0, 0 }
+	fg[INSENSITIVE]	= { 0.5, 0.5, 0.5 }
+	font_name	= "Verdana bold 10"
+}
+
+
+style "progressbar"
+{
+	bg[NORMAL]	= "#DCDCDC"	# achtergrond bar
+	font_name	= "Sans Not-Rotated 8"
+
+	engine "pixmap"
+	{
+		# Set the bar image
+		image
+		{
+			function        = BOX
+			recolorable     = FALSE
+			detail          = "bar"
+			file            = "./Images/Progress_new2_fg.png"
+			border          = { 1, 1, 1, 1 }
+			stretch         = TRUE
+		}
+		# Set the background image
+		image
+		{
+			function	= BOX
+			recolorable     = FALSE
+			detail		= "trough"
+			file		= "./Images/Progress_bg.png"
+			border		= { 4, 4, 0, 0 }
+			stretch		= TRUE
+		}
+	}
+}
+
+#==============================================================================================================
+#==============================================================================================================
+#
+# Define witch widgets are going to use witch style
+#
+#==============================================================================================================
+#==============================================================================================================
+
+widget_class "*GtkProgressBar"		style "progressbar"
+widget "*PartSizeLabel*"		style "text_part_size"
+widget_class "*GtkLabel"		style "GenFontStyle"
+widget "*StatusLabel*"		style "status_text"
+#widget_class "*GtkWindow"		style "window_normal"
+#widget_class "*GtkLabel"		style "label_normal"

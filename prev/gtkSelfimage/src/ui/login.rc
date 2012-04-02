@@ -1,0 +1,14 @@
+style "title"
+{
+      fg[NORMAL] = {1.0, 0.0, 0.0}
+      font = "-adobe-helvetica-bold-r-normal--*-140-*-*-*-*-*-*"
+}
+widget "*LoginNameLabel" style "title"
+
+style "my-special-style"
+{
+	fg[NORMAL] = { 1.0, 0, 0 }
+	font = "-adobe-helvetica-bold-r-normal--*-140-*-*-*-*-*-*"
+}
+
+widget "Login-Login name" style "my-special-style"

@@ -1,0 +1,8 @@
+ABOUTBOXTEXT_ABOUT      RCData  "SelfImageAboutBoxText_About.rtf"
+ABOUTBOXTEXT_CREDITS    RCData  "SelfImageAboutBoxText_Credits.rtf"
+PRECOMPRESSED_BZIP2     RCData  "Precompressed.bz2"
+PRECOMPRESSED_GZIP_256  RCData  "Precompressed_0256.gz"
+PRECOMPRESSED_GZIP_512  RCData  "Precompressed_0512.gz"
+PRECOMPRESSED_GZIP_1024 RCData  "Precompressed_1024.gz"
+PRECOMPRESSED_GZIP_2048 RCData  "Precompressed_2048.gz"
+

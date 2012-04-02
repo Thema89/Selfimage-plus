@@ -1,0 +1,93 @@
+$Keywords
+VCS: $Version: 1 $ $Revision: 5 $
+$History: **** V 0.1 by kfitzner ****
+$History: * tconfiguration.txt - 2005-07-31 2:39:07 AM - 1938 Bytes
+$History: * Initial check-in
+$History: **** V 0.2 by kfitzner ****
+$History: * tconfiguration.txt - 2005-08-01 3:11:44 PM - 2089 Bytes
+$History: * Add quotes to registry key.
+$History: **** V 0.3 by kfitzner ****
+$History: * tconfiguration.txt - 2005-11-10 10:05:13 AM - 2569 Bytes
+$History: * Add registry entries for version checking
+$History: **** V 0.4 by kfitzner ****
+$History: * tconfiguration.txt - 2005-11-14 5:10:14 PM - 3059 Bytes
+$History: * Add main form position entries
+$History: **** V 0.5 by kfitzner ****
+$History: * tconfiguration.txt - 2005-11-15 5:28:52 PM - 3323 Bytes
+$History: * Add entry for enable/disable of partition write warning
+$History: **** V 0.6 by kfitzner ****
+$History: * tconfiguration.txt - 2005-11-26 5:35:31 PM - 3783 Bytes
+$History: * Add entries for the last compression method, and the 
+$History: * last open/close folders
+$History: **** V 0.7 by kfitzner ****
+$History: * tconfiguration.txt - 2005-11-28 3:32:08 AM - 4207 Bytes
+$History: * Add entries for #threads, and gzip compression levels
+$History: **** V 1.0 by kfitzner ****
+$History: * tconfiguration.txt - 2005-11-28 3:33:59 AM - 4375 Bytes
+$History: * Change CompressionThreads to ProcessingThreads
+$History: **** V 1.1 by kfitzner ****
+$History: * tconfiguration.txt - 2005-12-04 10:52:11 AM - 4610 Bytes
+$History: * Add SkipUnallocated entry
+$History: **** V 1.2 by kfitzner ****
+$History: * tconfiguration.txt - 2005-12-07 4:53:06 PM - 4837 Bytes
+$History: * Add NBDConnections entry
+$History: **** V 1.3 by kfitzner ****
+$History: * tconfiguration.txt - 2005-12-09 2:21:16 PM - 5168 Bytes
+$History: * Add NBDTimeout and NBDTransactionSize
+$History: **** V 1.4 by kfitzner ****
+$History: * tconfiguration.txt - 2007-03-15 10:24:15 AM - 5325 Bytes
+$History: * Reduce default NBD Transaction size
+$History: **** Latest ** V 1.5 by kfitzner ** 2007-03-30 4:03:07 AM ****
+$History: * add gzipChunkSize
+$NoKeywords
+
+# This is the configuration text for the TConfiguration component.  It holds
+# all the config values that will be stored in the registry.
+#
+# Lines are formatted as below.  The registry key MUST begin with a valid root
+# key (HKEY_CLASSES_ROOT, HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE, HKEY_USERS,
+# or HKEY_CURRENT_CONFIG).  The type must be one of String, Boolean, or
+# Integer.  All names MUST be unique, even if they are stored in different
+# locations in the registry.  R/O means Read Only - an indicator that the
+# configuration setting should not be allowed to be changed.
+#
+# The class will create keys as needed, but only one level at a time.  For
+# example, if you want HKEY_CURRENT_USER\Software\MyProgram\Sub1 as the key
+# then make sure that there is an entry in ...\MyProgram before there is an
+# entry in ...\MyProgram\Sub1 so that MyProgram will be created if it doesn't
+# exist.
+#
+# Lines that begin with anything except 'HKEY_' (since all root keys start
+# this way) are igored.
+
+# Registry key                          Name                  Type     R/O    Default
+HKEY_CURRENT_USER\Software\SelfImage,   "Update Notify",      Boolean, false, "false"
+HKEY_CURRENT_USER\Software\SelfImage,   "Notify Squelch",     String,  false, ""
+HKEY_CURRENT_USER\Software\SelfImage,   "Last Version Check", String,  false, ""
+HKEY_CURRENT_USER\Software\SelfImage,   "Version URL",        String,  false, "http://selfimage.excelcia.org/SelfImageCurrentVersion.txt"
+HKEY_CURRENT_USER\Software\SelfImage,   "WindowTop",          Integer, false, "-1"
+HKEY_CURRENT_USER\Software\SelfImage,   "WindowLeft",         Integer, false, "-1"
+HKEY_CURRENT_USER\Software\SelfImage,   "WindowWidth",        Integer, false, "-1"
+HKEY_CURRENT_USER\Software\SelfImage,   "Remember Positions", Boolean, false, "true"
+HKEY_CURRENT_USER\Software\SelfImage,   "NoDirectWriteWarn",  Boolean, false, "false"
+HKEY_CURRENT_USER\Software\SelfImage,   "LastCompression",    Integer, false, "-1"
+HKEY_CURRENT_USER\Software\SelfImage,   "LastOpenDir",        String,  false, ""
+HKEY_CURRENT_USER\Software\SelfImage,   "LastSaveDir",        String,  false, ""
+HKEY_CURRENT_USER\Software\SelfImage,   "ProcessingThreads",  Integer, false, "0"
+HKEY_CURRENT_USER\Software\SelfImage,   "gzipFastLevel",      Integer, false, "1"
+HKEY_CURRENT_USER\Software\SelfImage,   "gzipBestLevel",      Integer, false, "9"
+HKEY_CURRENT_USER\Software\SelfImage,   "gzipChunkSize",      Integer, false, "2048"
+HKEY_CURRENT_USER\Software\SelfImage,   "SkipUnallocated",    Boolean, false, "true"
+HKEY_CURRENT_USER\Software\SelfImage,   "NBDConnections",     String,  false, ""
+HKEY_CURRENT_USER\Software\SelfImage,   "NBDTimeout",         Integer, false, "5000"
+HKEY_CURRENT_USER\Software\SelfImage,   "NBDTransactionSize", Integer, false, "512"
+
+#------------------------------------------------------------------------------
+# Read-only entries.  Thes are used as "shortcuts" into the registry so that
+# checking certain system registry settings is easier - can be done simply by
+# checking one of the named configuration settings for the program.
+#------------------------------------------------------------------------------
+
+# Registry key                                                 Name             Type     R/O
+"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders", Personal, String,  true
+

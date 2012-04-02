@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="libbz2.lib"/>
+    <OBJFILES value="..\obj\libbz2\blocksort.obj ..\obj\libbz2\bzlib.obj 
+      ..\obj\libbz2\compress.obj ..\obj\libbz2\crctable.obj 
+      ..\obj\libbz2\decompress.obj ..\obj\libbz2\huffman.obj 
+      ..\obj\libbz2\randtable.obj"/>
+    <RESFILES value=""/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;libbz2"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <LINKER value="TLib"/>
+    <USERDEFINES value="BZ_NO_STDIO"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="libbz2.bpf"/>
+    <INCLUDEPATH value="libbz2;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="libbz2;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-rch -w-par -w-eff -w-ccc -w-aus"/>
+    <LISTFILE value=""/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-Ilibbz2 -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp 
+      -DBZ_NO_STDIO -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -pr -a8 -6 -b- -k- -vi -c -tW 
+      -tWM"/>
+    <PFLAGS value="-N2..\obj\libbz2 -N0..\obj\libbz2 -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value=""/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="$(OBJFILES)"/>
+    <ALLLIB value=""/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="libbz2.bpf" FORMNAME="" UNITNAME="libbz2" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libbz2\blocksort.c" FORMNAME="" UNITNAME="blocksort.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libbz2\bzlib.c" FORMNAME="" UNITNAME="bzlib.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libbz2\compress.c" FORMNAME="" UNITNAME="compress.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libbz2\crctable.c" FORMNAME="" UNITNAME="crctable.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libbz2\decompress.c" FORMNAME="" UNITNAME="decompress.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libbz2\huffman.c" FORMNAME="" UNITNAME="huffman.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libbz2\randtable.c" FORMNAME="" UNITNAME="randtable.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=4105
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvAppFrmC6D.bpl=JVCL Application and Form Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCoreC6D.bpl=JVCL Core Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvBandsC6D.bpl=JVCL Band Objects
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvBDEC6D.bpl=JVCL BDE Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDBC6D.bpl=JVCL Database Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCmpC6D.bpl=JVCL Non-Visual Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCryptC6D.bpl=JVCL Encryption and Compression Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCtrlsC6D.bpl=JVCL Visual Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCustomC6D.bpl=JVCL Custom Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDlgsC6D.bpl=JVCL Dialog Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDockingC6D.bpl=JVCL Docking Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDotNetCtrlsC6D.bpl=JVCL DotNet Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvEDIC6D.bpl=JVCL EDI Components Designtime Package
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvGlobusC6D.bpl=JVCL Globus Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvHMIC6D.bpl=JVCL HMI Controls design time unit
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvInspectorC6D.bpl=JVCL Inspector Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvInterpreterC6D.bpl=JVCL Interpreter Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvJansC6D.bpl=JVCL Jans Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvManagedThreadsC6D.bpl=JVCL Managed Threads
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvMMC6D.bpl=JVCL Multimedia and Image Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvNetC6D.bpl=JVCL Network Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPageCompsC6D.bpl=JVCL Page Style Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPluginC6D.bpl=JVCL Plugin Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPrintPreviewC6D.bpl=JVCL Print Preview Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvStdCtrlsC6D.bpl=JVCL Standard Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvSystemC6D.bpl=JVCL System Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvTimeFrameworkC6D.bpl=JVCL Time Framework
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvUIBC6D.bpl=JVCL Unified Interbase Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvValidatorsC6D.bpl=JVCL Validators and Error Provider Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvWizardC6D.bpl=JVCL Wizard Design Time Package
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvXPCtrlsC6D.bpl=JVCL XP Controls
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=libbz2;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=libbz2;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=BZ_NO_STDIO
+Item1=_DEBUG;BZ_NO_STDIO
+Item2=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=..\obj\libbz2
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

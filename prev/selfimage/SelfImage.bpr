@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="SelfImage.exe"/>
+    <OBJFILES value="obj\SelfImage.obj obj\SelfImage_MainForm.obj 
+      obj\SelfImage_ProgressDialog.obj obj\SelfImage_NewVersionNotify.obj 
+      obj\SelfImage_Preferences.obj obj\SelfImage_AboutBox.obj 
+      obj\SelfImage_NBDDialog.obj obj\SelfImage_ReadThread.obj 
+      obj\SelfImage_CompressionThread.obj obj\SelfImage_DecompressionThread.obj 
+      obj\SelfImage_WriteThread.obj obj\SelfImage_TImageBuffer.obj 
+      obj\SelfImage_TImageStore.obj obj\SelfImage_Utility.obj 
+      obj\SelfImage_TDriveList.obj obj\SelfImage_TNBDClient.obj 
+      obj\TProgramLog.obj obj\TConfiguration.obj obj\FastMM4.obj 
+      obj\FastMM4Messages.obj obj\FastMM4BCB.obj obj\SysUtils.obj"/>
+    <RESFILES value="SelfImage.res obj\SelfImageMiscResources.res obj\TConfiguration.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) SelfImage_MainForm.dfm SelfImage_ProgressDialog.dfm 
+      SelfImage_NewVersionNotify.dfm SelfImage_Preferences.dfm 
+      SelfImage_AboutBox.dfm SelfImage_NBDDialog.dfm"/>
+    <LIBFILES value="lib\zlib.lib lib\libbz2.lib lib\memlib.lib"/>
+    <LIBRARIES value="rxctl6.lib dclocx.lib inet.lib dclusr60.lib teeqr.lib dss.lib tee.lib 
+      teedb.lib teeui.lib dbxcds.lib soaprtl.lib dsnapcon.lib dsnapcrba.lib 
+      bdecds.lib vcldbx.lib adortl.lib nmfast.lib bcb2kaxserver.lib indy.lib 
+      bcbie.lib dbexpress.lib inetdbxpress.lib inetdbbde.lib bcbsmp.lib 
+      visualdbclx.lib cds.lib ibxpress.lib vclie.lib bdertl.lib qrpt.lib 
+      vclx.lib vcldb.lib dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib vcldb.lib vclx.lib qrpt.lib bdertl.lib vclie.lib 
+      ibxpress.lib cds.lib visualdbclx.lib bcbsmp.lib inetdbbde.lib 
+      inetdbxpress.lib dbexpress.lib bcbie.lib indy.lib bcb2kaxserver.lib 
+      nmfast.lib adortl.lib vcldbx.lib bdecds.lib dsnapcrba.lib dsnapcon.lib 
+      soaprtl.lib dbxcds.lib teeui.lib teedb.lib tee.lib dss.lib teeqr.lib 
+      dclusr60.lib inet.lib dclocx.lib rxctl6.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dbexpress.bpi dbxcds.bpi indy.bpi 
+      bcb2kaxserver.bpi dclusr60.bpi"/>
+    <PATHCPP value=".;W:\shared\tprogramlog;W:\shared\tconfiguration;W:\shared\fastmm"/>
+    <PATHPAS value=".;W:\shared\fastmm"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="NDEBUG;ASMV;ASMINF;ZEXPORT=__fastcall;ZEXPORTVA=__cdecl;BZ_NO_STDIO"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="SelfImage.cpp"/>
+    <INCLUDEPATH value="W:\shared\fastmm;W:\shared\tconfiguration;W:\shared\tprogramlog;.;.\lib\zlib;.\lib\libbz2;.\lib\memlib;$(BCB)\Projects;$(BCB)\Projects\include;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="W:\shared\fastmm;W:\shared\tconfiguration;W:\shared\tprogramlog;.;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\Projects\Source\jvcl3\Resources;$(BCB)\Projects\Source\rx275"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IW:\shared\fastmm -IW:\shared\tconfiguration -IW:\shared\tprogramlog -I. 
+      -I.\lib\zlib -I.\lib\libbz2 -I.\lib\memlib -I$(BCB)\Projects 
+      -I$(BCB)\Projects\include -I$(BCB)\include -I$(BCB)\include\vcl 
+      -src_suffix cpp -DNDEBUG -DASMV -DASMINF -DZEXPORT=__fastcall 
+      -DZEXPORTVA=__cdecl -DBZ_NO_STDIO -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -xf -f- -X- -pr -a8 -6 -b -k- -vi 
+      -c -tW -tWM"/>
+    <PFLAGS value="-N2obj -N0obj -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /m2 /kh32768 /w2 /zn"/>
+    <LFLAGS value="-Iobj -D&quot;&quot; -GC&quot;Ex Turbo Modestum&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="SelfImage.res" FORMNAME="" UNITNAME="SelfImage.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage.cpp" FORMNAME="" UNITNAME="SelfImage" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_MainForm.cpp" FORMNAME="MainForm" UNITNAME="SelfImage_MainForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_ProgressDialog.cpp" FORMNAME="ProgressDialog" UNITNAME="SelfImage_ProgressDialog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_NewVersionNotify.cpp" FORMNAME="formSelfImageNewVersionNotify" UNITNAME="SelfImage_NewVersionNotify" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_Preferences.cpp" FORMNAME="formSelfImagePreferences" UNITNAME="SelfImage_Preferences" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_AboutBox.cpp" FORMNAME="formSelfImageAboutBox" UNITNAME="SelfImage_AboutBox" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_NBDDialog.cpp" FORMNAME="formSelfImageConnect" UNITNAME="SelfImage_NBDDialog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_ReadThread.cpp" FORMNAME="" UNITNAME="SelfImage_ReadThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_CompressionThread.cpp" FORMNAME="" UNITNAME="SelfImage_CompressionThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_DecompressionThread.cpp" FORMNAME="" UNITNAME="SelfImage_DecompressionThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_WriteThread.cpp" FORMNAME="" UNITNAME="SelfImage_WriteThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_TImageBuffer.cpp" FORMNAME="" UNITNAME="SelfImage_TImageBuffer" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_TImageStore.cpp" FORMNAME="" UNITNAME="SelfImage_TImageStore" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_Utility.cpp" FORMNAME="" UNITNAME="SelfImage_Utility" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_TDriveList.cpp" FORMNAME="" UNITNAME="SelfImage_TDriveList" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImage_TNBDClient.cpp" FORMNAME="" UNITNAME="SelfImage_TNBDClient" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="W:\shared\tprogramlog\TProgramLog.cpp" FORMNAME="" UNITNAME="TProgramLog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SelfImageMiscResources.rc" FORMNAME="" UNITNAME="SelfImageMiscResources.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="W:\shared\tconfiguration\TConfiguration.cpp" FORMNAME="" UNITNAME="TConfiguration" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TConfiguration.rc" FORMNAME="" UNITNAME="TConfiguration.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="W:\shared\fastmm\FastMM4.pas" FORMNAME="" UNITNAME="FastMM4" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="W:\shared\fastmm\FastMM4Messages.pas" FORMNAME="" UNITNAME="FastMM4Messages" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="W:\shared\fastmm\FastMM4BCB.cpp" FORMNAME="" UNITNAME="FastMM4BCB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\zlib.lib" FORMNAME="" UNITNAME="zlib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\libbz2.lib" FORMNAME="" UNITNAME="libbz2.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\memlib.lib" FORMNAME="" UNITNAME="memlib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SysUtils.pas" FORMNAME="" UNITNAME="SysUtils" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=2
+Release=1
+Build=92
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=4105
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=excelcia.ca
+FileDescription=SelfImage Disk Imager
+FileVersion=1.2.1.92
+InternalName=SelfImage
+LegalCopyright=©2005-2007 Kurt Fitzner &lt;kfitzner@excelcia.org&gt;
+LegalTrademarks=SelfImage™ is a tramark of Kurt Fitzner
+OriginalFilename=SelfImage.exe
+ProductName=SelfImage
+ProductVersion=1.2
+Comments=No warranty, use at own risk.
+
+[Excluded Packages]
+e:\program files\borland\cbuilder6\Projects\Bpl\ThemeManagerC6D.bpl=Soft Gems Theme Manager
+e:\program files\borland\cbuilder6\Projects\BPL\Modbc_cb6.bpl=mODBC data-aware components
+e:\program files\borland\cbuilder6\projects\bpl\ZCore.bpl=Zeos Core Classes and Intefaces
+e:\program files\borland\cbuilder6\projects\bpl\ZComponent.bpl=Zeos Database Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\ZPlain.bpl=Zeos Plain Database API
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\ZDbc.bpl=Zeos Low Level Database API
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\ZParseSql.bpl=Zeos SQL Parsing Classes and Intefaces
+e:\program files\borland\cbuilder6\projects\bpl\dclrxdb6.bpl=RX Library Database Components
+e:\program files\borland\cbuilder6\projects\bpl\dclrxbd6.bpl=RX Library BDE Database Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCoreC6D.bpl=JVCL Core Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCtrlsC6D.bpl=JVCL Visual Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDBC6D.bpl=JVCL Database Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCmpC6D.bpl=JVCL Non-Visual Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCustomC6D.bpl=JVCL Custom Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDlgsC6D.bpl=JVCL Dialog Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvJansC6D.bpl=JVCL Jans Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvStdCtrlsC6D.bpl=JVCL Standard Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvAppFrmC6D.bpl=JVCL Application and Form Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvBandsC6D.bpl=JVCL Band Objects
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvBDEC6D.bpl=JVCL BDE Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCryptC6D.bpl=JVCL Encryption and Compression Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDockingC6D.bpl=JVCL Docking Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDotNetCtrlsC6D.bpl=JVCL DotNet Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvEDIC6D.bpl=JVCL EDI Components Designtime Package
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvGlobusC6D.bpl=JVCL Globus Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvHMIC6D.bpl=JVCL HMI Controls design time unit
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvInspectorC6D.bpl=JVCL Inspector Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvInterpreterC6D.bpl=JVCL Interpreter Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvManagedThreadsC6D.bpl=JVCL Managed Threads
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvMMC6D.bpl=JVCL Multimedia and Image Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvNetC6D.bpl=JVCL Network Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPageCompsC6D.bpl=JVCL Page Style Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPluginC6D.bpl=JVCL Plugin Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPrintPreviewC6D.bpl=JVCL Print Preview Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvSystemC6D.bpl=JVCL System Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvTimeFrameworkC6D.bpl=JVCL Time Framework
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvUIBC6D.bpl=JVCL Unified Interbase Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvValidatorsC6D.bpl=JVCL Validators and Error Provider Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvWizardC6D.bpl=JVCL Wizard Design Time Package
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvXPCtrlsC6D.bpl=JVCL XP Controls
+
+[HistoryLists\hlIncludePath]
+Count=19
+Item0=W:\shared\fastmm;W:\shared\tconfiguration;W:\shared\tprogramlog;.;.\lib\zlib;.\lib\libbz2;.\lib\memlib;$(BCB)\Projects;$(BCB)\Projects\include;$(BCB)\include;$(BCB)\include\vcl
+Item1=W:\shared\fastmm;W:\shared\tconfiguration;W:\shared\tprogramlog;.;.\lib\zlib;.\lib\libbz2;$(BCB)\Projects;$(BCB)\Projects\include;$(BCB)\include;$(BCB)\include\vcl
+Item2=W:\shared\tconfiguration;W:\shared\tprogramlog;.;.\lib\zlib;.\lib\libbz2;$(BCB)\Projects;$(BCB)\Projects\include;$(BCB)\include;$(BCB)\include\vcl
+Item3=W:\shared\tconfiguration;W:\shared\tprogramlog;.\..\shared\tconfiguration;.\..\shared\tprogramlog;.;.\lib\zlib;.\lib\libbz2;$(BCB)\Projects;$(BCB)\Projects\include;$(BCB)\include;$(BCB)\include\vcl
+Item4=
+Item5=
+Item6=
+Item7=
+Item8=
+Item9=
+Item10=
+Item11=
+Item12=
+Item13=
+Item14=
+Item15=
+Item16=
+Item17=
+Item18=
+
+[HistoryLists\hlLibraryPath]
+Count=18
+Item0=W:\shared\fastmm;W:\shared\tconfiguration;W:\shared\tprogramlog;.;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\Projects\Source\jvcl3\Resources;$(BCB)\Projects\Source\rx275
+Item1=W:\shared\tconfiguration;W:\shared\tprogramlog;.;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\Projects\Source\jvcl3\Resources;$(BCB)\Projects\Source\rx275
+Item2=W:\shared\tconfiguration;W:\shared\tprogramlog;.\..\shared\tconfiguration;.\..\shared\tprogramlog;.;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\Projects\Source\jvcl3\Resources;$(BCB)\Projects\Source\rx275
+Item3=
+Item4=
+Item5=
+Item6=
+Item7=
+Item8=
+Item9=
+Item10=
+Item11=
+Item12=
+Item13=
+Item14=
+Item15=
+Item16=
+Item17=
+
+[HistoryLists\hlDebugSourcePath]
+Count=2
+Item0=$(BCB)\source\vcl;$(BCB)\source\Indy
+Item1=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=7
+Item0=NDEBUG;ASMV;ASMINF;ZEXPORT=__fastcall;ZEXPORTVA=__cdecl;BZ_NO_STDIO
+Item1=NDEBUG;ASMV;ASMINF;ZEXPORT=__fastcall;ZEXPORTVA=__cdecl;BZ_NO_STDIO;_DEBUG
+Item2=NDEBUG;ASMV;ASMINF;ZEXPORT=__fastcall;ZEXPORTVA=__cdecl;BZ_NO_STDIO;_DEBUG;NO_ASM_MEMCPY
+Item3=NDEBUG;ASMV;ASMINF;ZEXPORT=__fastcall;ZEXPORTVA=__cdecl;_DEBUG;BZ_NO_STDIO
+Item4=NDEBUG;ASMV;ASMINF;ZEXPORT=__fastcall;ZEXPORTVA=__cdecl;_DEBUG
+Item5=NDEBUG;ASMV;ASMINF;ZEXPORT=__fastcall;ZEXPORTVA=__cdecl
+Item6=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=obj
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl;$(BCB)\source\Indy
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

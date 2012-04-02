@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="memlib.lib"/>
+    <OBJFILES value="..\obj\memlib\memcpy_optimized.obj"/>
+    <RESFILES value=""/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;memlib"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <LINKER value="TLib"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="memlib.bpf"/>
+    <INCLUDEPATH value="memlib;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="memlib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <LISTFILE value=""/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-Imemlib -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -6 -b- -k- -y -v -vi- 
+      -c -tW -tWM"/>
+    <PFLAGS value="-N2..\obj\memlib -N0..\obj\memlib -$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value=""/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="$(OBJFILES)"/>
+    <ALLLIB value=""/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="memlib.bpf" FORMNAME="" UNITNAME="memlib" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="memlib\memcpy_optimized.cpp" FORMNAME="" UNITNAME="memcpy_optimized" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=4105
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+e:\program files\borland\cbuilder6\Projects\Bpl\ThemeManagerC6D.bpl=Soft Gems Theme Manager
+e:\program files\borland\cbuilder6\Projects\BPL\Modbc_cb6.bpl=mODBC data-aware components
+e:\program files\borland\cbuilder6\projects\bpl\ZCore.bpl=Zeos Core Classes and Intefaces
+e:\program files\borland\cbuilder6\projects\bpl\ZComponent.bpl=Zeos Database Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\ZPlain.bpl=Zeos Plain Database API
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\ZDbc.bpl=Zeos Low Level Database API
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\ZParseSql.bpl=Zeos SQL Parsing Classes and Intefaces
+e:\program files\borland\cbuilder6\projects\bpl\dclrx6.bpl=RX Library Controls and Tools
+e:\program files\borland\cbuilder6\projects\bpl\dclrxdb6.bpl=RX Library Database Components
+e:\program files\borland\cbuilder6\projects\bpl\dclrxbd6.bpl=RX Library BDE Database Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCoreC6D.bpl=JVCL Core Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCtrlsC6D.bpl=JVCL Visual Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDBC6D.bpl=JVCL Database Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCmpC6D.bpl=JVCL Non-Visual Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCustomC6D.bpl=JVCL Custom Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDlgsC6D.bpl=JVCL Dialog Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvJansC6D.bpl=JVCL Jans Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvStdCtrlsC6D.bpl=JVCL Standard Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvAppFrmC6D.bpl=JVCL Application and Form Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvBandsC6D.bpl=JVCL Band Objects
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvBDEC6D.bpl=JVCL BDE Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvCryptC6D.bpl=JVCL Encryption and Compression Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDockingC6D.bpl=JVCL Docking Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvDotNetCtrlsC6D.bpl=JVCL DotNet Controls
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvEDIC6D.bpl=JVCL EDI Components Designtime Package
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvGlobusC6D.bpl=JVCL Globus Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvHMIC6D.bpl=JVCL HMI Controls design time unit
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvInspectorC6D.bpl=JVCL Inspector Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvInterpreterC6D.bpl=JVCL Interpreter Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvManagedThreadsC6D.bpl=JVCL Managed Threads
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvMMC6D.bpl=JVCL Multimedia and Image Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvNetC6D.bpl=JVCL Network Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPageCompsC6D.bpl=JVCL Page Style Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPluginC6D.bpl=JVCL Plugin Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvPrintPreviewC6D.bpl=JVCL Print Preview Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvSystemC6D.bpl=JVCL System Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvTimeFrameworkC6D.bpl=JVCL Time Framework
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvUIBC6D.bpl=JVCL Unified Interbase Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvValidatorsC6D.bpl=JVCL Validators and Error Provider Components
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvWizardC6D.bpl=JVCL Wizard Design Time Package
+E:\Program Files\Borland\CBuilder6\Projects\Bpl\JvXPCtrlsC6D.bpl=JVCL XP Controls
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=memlib;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=memlib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=..\obj\memlib
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

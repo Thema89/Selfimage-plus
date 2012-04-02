@@ -1,0 +1,78 @@
+# Project: GtkSelfImage
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = ../../GtkSelfImage_private.res
+OBJ  = ../../CopyData.o ../../main.o ../../buttons.o ../../combobox.o ../../main_ui.o ../../myevents.o ../../SelfImage_TImageStore.o ../../SelfImage_Utility.o ../../alert.o ../../DriveList.o ../../sort.o ../../FifoBuffer.o ../../MutexClass.o ../../ReadThread.o ../../ThreadClass.o ../../WriteThread.o $(RES)
+LINKOBJ  = ../../CopyData.o ../../main.o ../../buttons.o ../../combobox.o ../../main_ui.o ../../myevents.o ../../SelfImage_TImageStore.o ../../SelfImage_Utility.o ../../alert.o ../../DriveList.o ../../sort.o ../../FifoBuffer.o ../../MutexClass.o ../../ReadThread.o ../../ThreadClass.o ../../WriteThread.o $(RES)
+LIBS =  -L"D:/Program Files/Common Files/GTK/2.0/LIB" -L"D:/Program Files/Common Files/GTK/2.0/lib" -mwindows -lmingw32 -lntdll -lgtk-win32-2.0 -lgthread-2.0 -lglib-2.0 -lgobject-2.0 -lz -lgdk-win32-2.0  -g3 
+INCS =  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/GTK-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/GLIB-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/PANGO-1.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/CAIRO"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/ATK-1.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/GTKGLEXT-1.0"  -I"D:/Program Files/Common Files/GTK/2.0/LIB/GTK-2.0/INCLUDE"  -I"D:/Program Files/Common Files/GTK/2.0/LIB/GLIB-2.0/INCLUDE"  -I"D:/Program Files/Common Files/GTK/2.0/LIB/GTKGLEXT-1.0/INCLUDE"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/LIBGLADE-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/LIBXML2"  -I"D:/Program Files/Common Files/GTK/2.0/include"  -I"D:/Program Files/Common Files/GTK/2.0/include/gtk-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/include/glib-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/include/cairo"  -I"D:/Program Files/Common Files/GTK/2.0/lib/glib-2.0/include"  -I"D:/Program Files/Common Files/GTK/2.0/include/pango-1.0"  -I"D:/Program Files/Common Files/GTK/2.0/lib/gtk-2.0/include"  -I"D:/Program Files/Common Files/GTK/2.0/include/atk-1.0" 
+CXXINCS =  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/GTK-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/GLIB-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/PANGO-1.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/CAIRO"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/ATK-1.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/GTKGLEXT-1.0"  -I"D:/Program Files/Common Files/GTK/2.0/LIB/GTK-2.0/INCLUDE"  -I"D:/Program Files/Common Files/GTK/2.0/LIB/GLIB-2.0/INCLUDE"  -I"D:/Program Files/Common Files/GTK/2.0/LIB/GTKGLEXT-1.0/INCLUDE"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/LIBGLADE-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/INCLUDE/LIBXML2"  -I"D:/Program Files/Common Files/GTK/2.0/include"  -I"D:/Program Files/Common Files/GTK/2.0/include/gtk-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/include/glib-2.0"  -I"D:/Program Files/Common Files/GTK/2.0/include/cairo"  -I"D:/Program Files/Common Files/GTK/2.0/lib/glib-2.0/include"  -I"D:/Program Files/Common Files/GTK/2.0/include/pango-1.0"  -I"D:/Program Files/Common Files/GTK/2.0/lib/gtk-2.0/include"  -I"D:/Program Files/Common Files/GTK/2.0/include/atk-1.0" 
+BIN  = ../../GtkSelfImage.exe
+CXXFLAGS = $(CXXINCS) -mno-cygwin -mms-bitfields   -g3
+CFLAGS = $(INCS) -mno-cygwin -mms-bitfields   -g3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ../../GtkSelfImage.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "..\..\GtkSelfImage.exe" $(LIBS)
+
+../../CopyData.o: ../../src/CopyData.cpp
+	$(CPP) -c ../../src/CopyData.cpp -o ../../CopyData.o $(CXXFLAGS)
+
+../../main.o: ../../src/main.cpp
+	$(CPP) -c ../../src/main.cpp -o ../../main.o $(CXXFLAGS)
+
+../../buttons.o: ../../src/ui/buttons.cpp
+	$(CPP) -c ../../src/ui/buttons.cpp -o ../../buttons.o $(CXXFLAGS)
+
+../../combobox.o: ../../src/ui/combobox.cpp
+	$(CPP) -c ../../src/ui/combobox.cpp -o ../../combobox.o $(CXXFLAGS)
+
+../../main_ui.o: ../../src/ui/main_ui.cpp
+	$(CPP) -c ../../src/ui/main_ui.cpp -o ../../main_ui.o $(CXXFLAGS)
+
+../../myevents.o: ../../src/ui/myevents.cpp
+	$(CPP) -c ../../src/ui/myevents.cpp -o ../../myevents.o $(CXXFLAGS)
+
+../../SelfImage_TImageStore.o: ../../src/SelfImage_TImageStore.cpp
+	$(CPP) -c ../../src/SelfImage_TImageStore.cpp -o ../../SelfImage_TImageStore.o $(CXXFLAGS)
+
+../../SelfImage_Utility.o: ../../src/SelfImage_Utility.cpp
+	$(CPP) -c ../../src/SelfImage_Utility.cpp -o ../../SelfImage_Utility.o $(CXXFLAGS)
+
+../../alert.o: ../../src/alert/alert.cpp
+	$(CPP) -c ../../src/alert/alert.cpp -o ../../alert.o $(CXXFLAGS)
+
+../../DriveList.o: ../../src/DriveList.cpp
+	$(CPP) -c ../../src/DriveList.cpp -o ../../DriveList.o $(CXXFLAGS)
+
+../../sort.o: ../../src/sort.cpp
+	$(CPP) -c ../../src/sort.cpp -o ../../sort.o $(CXXFLAGS)
+
+../../FifoBuffer.o: ../../src/FifoBuffer.cpp
+	$(CPP) -c ../../src/FifoBuffer.cpp -o ../../FifoBuffer.o $(CXXFLAGS)
+
+../../MutexClass.o: ../../src/MutexClass.cpp
+	$(CPP) -c ../../src/MutexClass.cpp -o ../../MutexClass.o $(CXXFLAGS)
+
+../../ReadThread.o: ../../src/ReadThread.cpp
+	$(CPP) -c ../../src/ReadThread.cpp -o ../../ReadThread.o $(CXXFLAGS)
+
+../../ThreadClass.o: ../../src/ThreadClass.cpp
+	$(CPP) -c ../../src/ThreadClass.cpp -o ../../ThreadClass.o $(CXXFLAGS)
+
+../../WriteThread.o: ../../src/WriteThread.cpp
+	$(CPP) -c ../../src/WriteThread.cpp -o ../../WriteThread.o $(CXXFLAGS)
+
+../../GtkSelfImage_private.res: GtkSelfImage_private.rc 
+	$(WINDRES) -i GtkSelfImage_private.rc --input-format=rc -o ../../GtkSelfImage_private.res -O coff 
